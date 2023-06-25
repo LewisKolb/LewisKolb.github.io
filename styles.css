@@ -5,9 +5,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
 }
 
+.mainbg {
+    background-color: antiquewhite;
+}
 .centerdiv {
   
     text-align: center;
@@ -136,25 +138,37 @@ p{
     position: relative;
     z-index: 15;
     bottom: 100px;
+    display: flex;
+    justify-content: center;
+    
 }
 
-.nav ul li {
-    display: inline-block;
+
+.nav a{
+
     color: #fbf2d5;
     font-size:  30px; ;
     font-family: Merriweather;
-    padding: 30px;
-    align:center;
-    position: relative;
-}
 
-.nav ul li :hover {
+}
+.nav  a:visited {
     color: #fdc57b;;
     cursor: pointer;
 }
-
-.nav ul li :visited {
-    color: #fdc57b;;
+.nav a:hover {
+    color: #c46f00;;
     cursor: pointer;
 }
 
+div .box{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto 30px;
+    border-radius: 10px;
+    background-color: #445961;
+    column-gap: 20px;
+
+}
